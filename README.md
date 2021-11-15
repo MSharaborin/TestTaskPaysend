@@ -1,6 +1,6 @@
-##Getting started
+## Getting started
 ****
-###Requirements
+### Requirements
     - aiohttp==3.8.0
     - pydantic==1.8.2 
     - pandas==1.3.4
@@ -12,7 +12,7 @@
     main.py Запускает и создает задачи.
 
 
-###How start
+### How start
 1.      Start in docker:
    
         docker build -t test_task .
