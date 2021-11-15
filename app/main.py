@@ -3,7 +3,7 @@ import aiohttp
 from datetime import datetime
 
 from view import ResultConstructor
-from settings import LIST_COIN_AND_LINKS
+from settings import LIST_COIN_AND_LINKS, delay
 
 
 rc = ResultConstructor()
@@ -27,7 +27,7 @@ async def main(array):
 			task = asyncio.create_task(fetch_connect(url, session, coin))
 			tasks.append(task)
 		await asyncio.gather(*tasks, return_exceptions=True)
-	await asyncio.sleep(120)
+	await asyncio.sleep(delay)
 
 
 

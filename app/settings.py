@@ -2,14 +2,10 @@ from model import PoloniexCoin, ExmoCoin, HitBtcCoin
 
 delay = 120
 
-polonex_api = 'https://poloniex.com/public?command=returnTicker'
-exmo_api = 'https://api.exmo.com/v1.1/ticker/'
-hitbtc_api = 'https://api.hitbtc.com/api/3/public/ticker'
-
 LIST_COIN_AND_LINKS = {
-	PoloniexCoin: polonex_api,
-	ExmoCoin: exmo_api,
-	HitBtcCoin: hitbtc_api,
+	PoloniexCoin: 'https://poloniex.com/public?command=returnTicker',
+	ExmoCoin: 'https://api.exmo.com/v1.1/ticker/',
+	HitBtcCoin: 'https://api.hitbtc.com/api/3/public/ticker',
 }
 
 CURRENCY_PAIRS = [

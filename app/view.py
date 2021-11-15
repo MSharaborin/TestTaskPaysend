@@ -23,10 +23,8 @@ class ResultConstructor:
 		self._data_frames.clear()
 
 	def _sort_result(self, result):
-		return f"""
-				Sorted ASK:\n {result.transpose().sort_values(by='ask')} 
-				Sorted BID:\n {result.transpose().sort_values(by='bid')}
-				"""
+		return f"Sorted ASK:\n {result.transpose().sort_values(by='ask')}\n" \
+		       f"Sorted BID:\n {result.transpose().sort_values(by='bid')}\n"
 
 	def view_result(self, df):
 		for cur_pair in CURRENCY_PAIRS:
